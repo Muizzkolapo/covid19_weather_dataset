@@ -1,10 +1,5 @@
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+### Creating Covid dataset
+This project was embarked to try to create a dataset capturing the weather conditions of the assumed day of infection for a person infected with Covid19. The logic behind this estimation might not be correct as it was done using the popular knowledge of symptoms showing after 7 days of being infected. Public data available on google was used for this project.
 
 
 ### Resources:
