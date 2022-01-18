@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: covid_cases.sql
+    description: "Capturing all the covid cases around the world"
+    columns:
+      - name: countries_and_territories
+        description: "The country for which case is captured"
+        tests:
+          - not_null
+
+  - name: covid_weather.sql
+    description: "Capturing weather across different regions in the world"
+    columns:
+      - name: postal_code
+        description: "The primary key for this table we expect unique postal code for each region captured""
+        tests:
+          - unique
+          
+
+  - name: covid19_query_final.sql
+    description: "Final table showing cases and weather on day of assumed infection"
+    columns:
+      - name: countries_and_territories
+        tests:
+          - not_null
+
